@@ -119,7 +119,11 @@ a:hover {
 
 .section p {
   color: var(--text);
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
 }
 
 /* Entries */
@@ -187,5 +191,10 @@ a:hover {
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  .portrait {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
   }
 }
