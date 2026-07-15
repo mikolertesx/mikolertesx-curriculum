@@ -10,10 +10,14 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "synth": "cdk synth",
-    "diff": "cdk diff",
-    "deploy": "cdk deploy --require-approval never",
-    "destroy": "cdk destroy",
+    "synth": "cdk synth -c env=dev",
+    "synth:prod": "cdk synth -c env=prod",
+    "diff": "cdk diff -c env=dev",
+    "diff:prod": "cdk diff -c env=prod",
+    "deploy": "cdk deploy -c env=dev --require-approval never",
+    "deploy:prod": "cdk deploy -c env=prod",
+    "destroy": "cdk destroy -c env=dev",
+    "destroy:prod": "cdk destroy -c env=prod",
     "bootstrap": "cdk bootstrap"
   },
   "devDependencies": {

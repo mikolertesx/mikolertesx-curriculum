@@ -18,6 +18,7 @@
     ]
   },
   "context": {
+    "env": "dev",
     "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": true,
     "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
     "@aws-cdk/core:enablePartitionLiterals": true,

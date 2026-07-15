@@ -21,6 +21,6 @@
     "typeRoots": ["./node_modules/@types"],
     "outDir": "dist"
   },
-  "include": ["bin/**/*.ts", "lib/**/*.ts"],
+  "include": ["bin/**/*.ts", "lib/**/*.ts", "config/**/*.ts"],
   "exclude": ["node_modules", "cdk.out", "dist", "src"]
 }
